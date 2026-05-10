@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(254, 235, 246)
+
+}
+.logo{
+    font-weight: bold;
+    font-size: x-large;
+    content: ce;
+    
+}
+.navlinks{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.navlinks a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    transition: 0.3s;
+    color: black;
+}
+.navlinks a:hover{
+    color: pink;
+}

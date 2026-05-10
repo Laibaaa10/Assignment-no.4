@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(254, 235, 246)
+
+}
+.logo{
+    font-weight: 100%;
+    font-size: ;
+}
