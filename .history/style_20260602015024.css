@@ -21,7 +21,6 @@ body{
     position: sticky;
     top: 10px;
     margin: 10px 10px;
-    position: sticky;
 }
 
 .logo{
@@ -63,9 +62,12 @@ body{
 
 .hero{
   width: 100%;
+  min-height: calc(100vh - 90px);
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding: 50px 80px;
 }
 
@@ -238,6 +240,7 @@ body{
 }
 
 .service-left{
+    flex:1;
     display:flex;
     flex-direction:column;
     gap:25px;
@@ -287,3 +290,20 @@ body{
     border-radius:20px;
 }
 
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .services{
+        flex-direction:column;
+    }
+
+    .service-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .service-right img{
+        max-width:350px;
+    }
+}

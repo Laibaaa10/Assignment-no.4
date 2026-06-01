@@ -21,7 +21,6 @@ body{
     position: sticky;
     top: 10px;
     margin: 10px 10px;
-    position: sticky;
 }
 
 .logo{
@@ -63,9 +62,12 @@ body{
 
 .hero{
   width: 100%;
+  min-height: calc(100vh - 90px);
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding: 50px 80px;
 }
 
@@ -232,42 +234,35 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:50px;
     padding:80px 8%;
-    background:#fdf7f8;
+    gap:50px;
+    background:#e6e6e6;
 }
 
 .service-left{
+    flex:1;
     display:flex;
     flex-direction:column;
     gap:25px;
 }
 
 .service-card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
     display:flex;
     align-items:center;
-    gap:20px;
-    background:#fff;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    transition:0.3s;
+    gap:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
-.service-card:hover{
-    transform:translateY(-5px);
-}
-
-.service-card i{
-    font-size:45px;
-    color:#d16b86;
-    min-width:60px;
+.service-card img{
+    width:90px;
 }
 
 .service-card h3{
-    color:#d16b86;
-    margin-bottom:8px;
-    font-size:22px;
+    color:#1d2951;
+    margin-bottom:10px;
 }
 
 .service-card p{
@@ -283,7 +278,5 @@ body{
 
 .service-right img{
     width:100%;
-    max-width:500px;
-    border-radius:20px;
+    max-width:700px;
 }
-

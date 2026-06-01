@@ -21,7 +21,6 @@ body{
     position: sticky;
     top: 10px;
     margin: 10px 10px;
-    position: sticky;
 }
 
 .logo{
@@ -63,9 +62,12 @@ body{
 
 .hero{
   width: 100%;
+  min-height: calc(100vh - 90px);
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding: 50px 80px;
 }
 
@@ -234,10 +236,11 @@ body{
     align-items:center;
     gap:50px;
     padding:80px 8%;
-    background:#fdf7f8;
+    background:#f8f4f1;
 }
 
 .service-left{
+    flex:1;
     display:flex;
     flex-direction:column;
     gap:25px;
@@ -247,7 +250,7 @@ body{
     display:flex;
     align-items:center;
     gap:20px;
-    background:#fff;
+    background:white;
     padding:25px;
     border-radius:15px;
     box-shadow:0 4px 12px rgba(0,0,0,0.08);
@@ -258,10 +261,10 @@ body{
     transform:translateY(-5px);
 }
 
-.service-card i{
-    font-size:45px;
-    color:#d16b86;
-    min-width:60px;
+.service-card img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
 }
 
 .service-card h3{
@@ -287,3 +290,35 @@ body{
     border-radius:20px;
 }
 
+
+.newsletter{
+    background:white;
+    width:90%;
+    margin:50px auto;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.newsletter h2{
+    color:#1d2951;
+    margin-bottom:25px;
+}
+
+.newsletter form{
+    display:flex;
+    justify-content:center;
+}
+
+.newsletter input{
+    width:400px;
+    padding:12px;
+    border:1px solid #ccc;
+}
+
+.newsletter button{
+    padding:12px 25px;
+    background:#1d2951;
+    color:white;
+    border:none;
+}

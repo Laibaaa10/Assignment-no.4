@@ -21,7 +21,6 @@ body{
     position: sticky;
     top: 10px;
     margin: 10px 10px;
-    position: sticky;
 }
 
 .logo{
@@ -63,9 +62,12 @@ body{
 
 .hero{
   width: 100%;
+  min-height: calc(100vh - 90px);
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding: 50px 80px;
 }
 
@@ -162,128 +164,27 @@ body{
 }
 
 
-.products{
-    padding:80px 10%;
-}
-
-.section-title{
-    margin-bottom:30px;
-    font-size:32px;
-    text-align:center;
-}
-
-.product-container{
+.card-container{
     display:flex;
+    gap:20px;
     justify-content:center;
-    gap:25px;
     flex-wrap:wrap;
 }
 
 .card{
-    width:280px;
-    background:#fff;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
+    width:250px;
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
 }
 
 .card img{
     width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-.card h3{
-    padding:15px 15px 5px;
-}
-
-.card p{
-    padding:0 15px;
-    color:#666;
 }
 
 .price-row{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px;
 }
-
-.price-row span{
-    font-weight:bold;
-    color:#d16b86;
-}
-
-.price-row button{
-    background:#d16b86;
-    color:white;
-    border:none;
-    padding:8px 15px;
-    border-radius:20px;
-    cursor:pointer;
-}
-
-.services{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:50px;
-    padding:80px 8%;
-    background:#fdf7f8;
-}
-
-.service-left{
-    display:flex;
-    flex-direction:column;
-    gap:25px;
-}
-
-.service-card{
-    display:flex;
-    align-items:center;
-    gap:20px;
-    background:#fff;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    transition:0.3s;
-}
-
-.service-card:hover{
-    transform:translateY(-5px);
-}
-
-.service-card i{
-    font-size:45px;
-    color:#d16b86;
-    min-width:60px;
-}
-
-.service-card h3{
-    color:#d16b86;
-    margin-bottom:8px;
-    font-size:22px;
-}
-
-.service-card p{
-    color:#555;
-    line-height:1.6;
-}
-
-.service-right{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
-
-.service-right img{
-    width:100%;
-    max-width:500px;
-    border-radius:20px;
-}
-
